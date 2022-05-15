@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="title">
+            <h1>My Project</h1>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <img src="picture.jfif" alt="">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque animi adipisci molestiae distinctio error hic laboriosam, earum praesentium nisi, iste dolorem mollitia quod exercitationem rerum dolores inventore maiores quia enim tempora quibusdam, facilis tenetur numquam sed iure! Repellendus blanditiis a, earum totam unde natus repellat assumenda nulla. At temporibus quasi maiores tenetur corporis maxime veritatis! Reprehenderit molestiae est reiciendis quidem necessitatibus facilis corrupti, accusamus porro deleniti? Reprehenderit repellendus distinctio ratione obcaecati nisi ad sapiente quos asperiores error modi eum alias, dicta cumque numquam quis, voluptatum consectetur, rerum odio blanditiis eveniet! Mollitia maxime quo qui. Quisquam voluptates earum nam voluptate ipsum.
+                </p>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minus ipsa rerum, maxime sit voluptatibus nostrum veniam exercitationem neque adipisci impedit veritatis alias, repellat similique magnam et consequuntur a maiores laborum in ea omnis. Laborum, quaerat pariatur saepe ullam iure aspernatur natus? Sint reiciendis, laboriosam ad a pariatur dicta sunt.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#">&copy;Malka Anjum</a>
+        </div>
+    </div> -->
+
+    <!-- <img id="img1" src="picture.jfif" alt="" onmouseover="setNewImage()" onmouseout="setOldImage()"> -->
+
+
+    <form onsubmit="return validate()" action="default.html">
+        <input type="text" placeholder="Username" id="uname">
+        <br><br>
+        <input type="password" placeholder="password" id="pass">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // function setNewImage(){
+        //     document.getElementById("img1").src="new.jpg"
+        // }
+
+        // function setOldImage(){
+        //     document.getElementById("img1").src="img.jpg"
+        // }
+
+
+        function validate(){
+            var username = document.getElementById("uname")
+            var password = document.getElementById("pass")
+
+            if(username.value.trim() == "" || password.value == ""){
+                alert("no blank allowed")
+                return false
+            }else{
+                 true
+            }
+        }
+    </script>
+
+
+
+    
+</body>
+</html>

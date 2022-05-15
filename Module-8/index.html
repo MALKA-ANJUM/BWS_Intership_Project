@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-8</title>
+    <style>
+       .btn{
+           color: #fff;
+           background: brown;
+           border: none;
+           padding: 1em;
+           border-radius: 5px;
+           font-size: 1em;
+           font-weight: bold;
+           transition: 0.5s;
+           cursor: pointer;
+       }
+       .btn:hover{
+           background: white;
+           color: brown;
+           border: 1px solid brown;
+       }
+    </style>
+</head>
+<body>
+    
+
+
+    <button onclick="fetchSwapi()" class="btn">
+        Click me!
+    </button>
+    <span id="name"></span>
+   
+
+
+<script>
+
+
+    function fetchSwapi() {
+        console.log("clicked function fetchSwapi")
+        fetch('https://swapi.dev/api/people/' + (Math.floor(Math.random() * (100-1) + 1)))
+            .then(response => response.json())
+            .then(data => 
+                displayData(data));
+    }
+    function displayData(data) {
+        console.log(data)
+        const name = document.getElementById("name");
+        name.innerText = data. name;
+       
+
+
+
+    }
+
+       
+
+
+
+</script>
+</body>
+</html>

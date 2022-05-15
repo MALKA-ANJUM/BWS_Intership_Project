@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 3em;
+    border-bottom: 1px solid #e2e2e2;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+   
+}
+nav ul li{
+    font-size: 1.13rem;
+    font-weight: 400;
+    line-height: 2;
+   
+}
+nav ul li a{
+    color: rgba(0,0,0,.9);
+    text-transform: uppercase;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    letter-spacing: 1px;
+}
+.hero{
+    background: linear-gradient(180.43deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.80) 100%), url(space.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 740px;
+    display: flex;
+    align-items: center;
+   
+    
+}
+.hero-title{
+    width: 710px;
+    max-width: 75%;
+    margin-left: 15rem;
+}
+.hero h1{
+    font-size: 3.5em;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+   
+    margin-bottom: 0.5em;
+}
+.hero p{
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1.13;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 1.5rem
+}
+.hero p a{
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1.75px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
